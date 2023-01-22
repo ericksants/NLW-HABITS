@@ -14,25 +14,37 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background-color: #09090a;
   padding: 48px;
+  position: fixed;
+  width: 100%;
 }
+
 form {
   display: flex;
   padding: 0 48px;
 }
+
+#form-habits {
+  display: flex;
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
 .habits {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 .habit {
   width: 64px;
   height: 64px;
   font-size: 32px;
   display: flex;
 }
+
 .days {
   display: flex;
   gap: 48px;
@@ -52,6 +64,7 @@ form {
   color: #a1a1aa;
   text-align: center;
 }
+
 button {
   padding: 16px 24px;
   border-radius: 8px;
@@ -70,17 +83,21 @@ button {
 input {
   appearance: none;
   -webkit-appearance: none;
-
   width: 64px;
   height: 64px;
-
   border: 2px solid #27272a;
   border-radius: 8px;
-
   background: #18181b;
 }
-/* pseudo-select*/
+
+/* pseudo-select */
 input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
